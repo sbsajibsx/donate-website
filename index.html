@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Website</title>
+    <!-- google font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- google font end -->
+    <!-- tailwind and daisyUI CDN start -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind and daisyUL CDN end -->
+    <!-- tailwind css configuration start -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#B4F461',
+              secondary: '#F9F7F3',
+              third: 'rgba(17, 17, 17, 0.05)',
+            },
+            fontFamily: {
+              lexend: '"Lexend", sans-serif'
+            },
+          },
+        },
+      }
+    </script>
+    <!-- tailwind css configuration end -->
+</head>
+<body class="font-lexend">
+    <!-- header section start -->
+    <header class="sticky top-0">
+        <!-- navbar start -->
+        <nav class="bg-secondary pb-14">
+          <div class="navbar bg-base-100 bseg-condary bg-secondary w-11/12 mx-auto">
+            <div class="navbar-start">
+              <button class="btn bg-primary py-1 px-8 font-semibold text-xl hover:bg-primary">Blog</button>
+            </div>
+            <div class="navbar-center flex items-center gap-4">
+                <div>
+                  <img src="assets/logo.png" alt="">
+                </div>
+                <div class="hidden md:block"><p class="font-semibold text-xl">Donate Bangladesh</p></div>
+            </div>
+            <div class="navbar-end">
+                <div class="mr-3">
+                  <img src="assets/coin.png" alt="">
+                </div>
+                  <div>
+                    <p class="font-medium text-xl text-gray-500 flex"><span class="mr-2">5500</span> BDT</p>
+                </div>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar end -->
+        <!-- button start -->
+    <div class="flex justify-center backdrop-blur-sm bg-transparent gap-5 pt-12 pb-3">
+      <button class="btn bg-primary px-8 font-semibold text-xl hover:bg-primary">Donation</button>
+      <button class="btn px-8 font-semibold text-xl">History</button>
+    </div>
+    <!-- button end -->
+    </header>
+    <!-- header section end -->
+    <!-- main start -->
+    <main class="w-11/12 mx-auto">
+      <!-- main section start -->
+      <section class="box-border border-4 p-9">
+        <!-- box 1 start -->
+        <div class="md:flex items-center gap-8">
+          <div>
+            <img src="assets/noakhali.png" alt="">
+          </div>
+          <div class="border-4 p-8 space-y-6">
+            <!-- coin start -->
+              <span class="bg-third px-8 py-3 rounded-xl text-gray-500 gap-2 inline-flex">
+                <img src="assets/coin.png" alt=""><span>0</span>BDT
+              </span>
+            <!-- coin end -->
+            <!-- heading start -->
+            <h1 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h1>
+            <!-- heading end -->
+            <!-- paragraph start -->
+            <p class="font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <!-- paragraph end -->
+            <!-- input start -->
+            <div>
+              <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full" />
+            </div>
+            <!-- input end -->
+            <!-- donate button start -->
+            <div>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="w-full btn font-semibold text-xl bg-primary hover:bg-primary" onclick="my_modal_1.showModal()">Donate Now</button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                  <h3 class="text-2xl font-black text-center">Congrates!</h3>
+                  <p class="py-4 flex justify-center">You have donated for humankind</p>
+                  <p class="text-xl font-bold text-center">successfully</p>
+                  <div class="modal-action flex justify-center">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">Close Confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+            <!-- donate button end -->
+          </div>
+        </div>
+      </section>
+    </main>
+</body>
+</html>
