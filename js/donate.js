@@ -32,7 +32,7 @@ document.getElementById('donate-1-btn').addEventListener('click', function(){
     }
     else{
         document.getElementById('my_modal_1').close();
-        alert('Type Positive Number or Not Enough Money');
+        alert('Type Positive Number or Type Without 0');
         return;
     }
     addDonate = '';
@@ -73,7 +73,7 @@ document.getElementById('donate-2-btn').addEventListener('click', function(){
     }
     else{
         document.getElementById('my_modal_1').close();
-        alert('Type Positive Number')
+        alert('Type Positive Number or Type Without 0')
         return;
     }
     addDonate = '';
@@ -115,7 +115,7 @@ document.getElementById('donate-3-btn').addEventListener('click', function(){
     }
     else{
         document.getElementById('my_modal_1').close();
-        alert('Type Positive Number')
+        alert('Type Positive Number or Type Without 0')
         return;
     }
     addDonate = '';
