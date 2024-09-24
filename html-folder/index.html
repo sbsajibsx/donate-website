@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+        <!-- google font start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <!-- google font end -->
+        <!-- tailwind and daisyUI CDN start -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- tailwind and daisyUL CDN end -->
+        <!-- tailwind css configuration start -->
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  primary: '#B4F461',
+                  secondary: '#F9F7F3',
+                  third: 'rgba(17, 17, 17, 0.05)',
+                },
+                fontFamily: {
+                  lexend: '"Lexend", sans-serif'
+                },
+              },
+            },
+          }
+        </script>
+        <!-- tailwind css configuration end -->
+</head>
+<body class="font-lexend">
+    <!-- header start -->
+    <header>
+        <!-- navbar start -->
+        <nav class="bg-secondary p-4">
+            <div class="navbar bg-base-100 bseg-condary bg-secondary w-11/12 mx-auto">
+              <div class="navbar-start">
+                <button id="home" class="btn bg-primary text-black py-1 px-8 font-semibold text-xl hover:bg-primary">Home</button>
+              </div>
+              <div class="navbar-center flex items-center gap-4">
+                  <div>
+                    <img src="../assets/logo.png" alt="">
+                  </div>
+                  <div class="hidden md:block text-black"><p class="font-semibold text-xl">Donate Bangladesh</p></div>
+              </div>
+              <div class="navbar-end">
+                  <div class="mr-3">
+                    <img src="../assets/coin.png" alt="">
+                  </div>
+                    <div>
+                      <p class="font-medium text-xl text-gray-500 flex"><span id="totalAmmount" class="mr-2">5500</span> BDT</p>
+                  </div>
+              </div>
+            </div>
+        </nav>
+          <!-- navbar end -->
+    </header>
+    <!-- header end -->
+</body>
+</html>
