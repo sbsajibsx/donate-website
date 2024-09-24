@@ -6,7 +6,8 @@ document.getElementById('donate-1-btn').addEventListener('click', function(){
         document.getElementById('my_modal_1').close();
         alert('Type Number Of Ammount');
         return;
-    }
+    }  
+
     if(totalBalance < addDonate){
         document.getElementById('my_modal_1').close();
         alert('Not Enough Money')
@@ -24,8 +25,8 @@ document.getElementById('donate-1-btn').addEventListener('click', function(){
         addHistory.className = 'border-2 p-4 rounded-3xl';
         addHistory.innerHTML = `
 
-            <p class="mb-4"> ${addDonate} Taka is Donated for ${head} </p>
-            <p>Date: ${new Date().toString()}<p/>
+            <h1 class="mb-4 font-bold text-2xl"> ${addDonate} Taka is Donated for ${head} </h1>
+            <p class="text-gray-500">Date: ${new Date().toString()}<p/>
 
         `;
         document.getElementById('history-section').appendChild(addHistory);
@@ -65,8 +66,8 @@ document.getElementById('donate-2-btn').addEventListener('click', function(){
         addHistory.className = 'border-2 p-4 rounded-3xl';
         addHistory.innerHTML = `
 
-            <p class="mb-4"> ${addDonate} Taka is Donated for ${head} </p>
-            <p>Date: ${new Date().toString()}<p/>
+            <h1 class="mb-4 font-bold text-2xl"> ${addDonate} Taka is Donated for ${head} </h1>
+            <p class="text-gray-500">Date: ${new Date().toString()}<p/>
 
         `;
         document.getElementById('history-section').appendChild(addHistory);
@@ -107,8 +108,8 @@ document.getElementById('donate-3-btn').addEventListener('click', function(){
         addHistory.className = 'border-2 p-4 rounded-3xl';
         addHistory.innerHTML = `
 
-            <p class="mb-4"> ${addDonate} Taka is Donated for ${head} </p>
-            <p>Date: ${new Date().toString()}<p/>
+            <h1 class="mb-4 font-bold text-2xl"> ${addDonate} Taka is Donated for ${head} </h1>
+            <p class="text-gray-500">Date: ${new Date().toString()}<p/>
 
         `;
         document.getElementById('history-section').appendChild(addHistory);
